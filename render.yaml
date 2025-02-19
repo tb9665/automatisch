@@ -92,13 +92,13 @@ services:
           property: port
       - fromGroup: common-env-vars
   - type: redis
-  plan: free
+    plan: free
     name: automatisch-redis
     ipAllowList: [] # allow only internal connections
     maxmemoryPolicy: noeviction
 databases:
   - name: automatisch-database
-  plan: free
+    plan: free
     databaseName: automatisch
 envVarGroups:
   - name: common-env-vars
